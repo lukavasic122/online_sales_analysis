@@ -55,5 +55,11 @@ class ProductManager:
                 print(f">.⚠️ - Greska! Proizvod '{product}' ne postoji na lageru!")
         else:
             print(f">.⚠️ - Greska! Unesite proizvod sa naseg lagera!")
+
+
+       #--Ukupna cena na lageru:
+    def get_total_price(self):
+        total_price = sum(product.price * product.quantity for product in self.product_list)
+        print(f">.💵 - Ukupna cena svih proizvoda: {total_price:.2f}")      
                 
     

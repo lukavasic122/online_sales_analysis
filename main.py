@@ -31,3 +31,14 @@ cart.add_to_cart(product_4)
 
 cart.get_cart_items()
 cart.get_cart_total()
+
+
+cart = Cart()
+
+cart.add_to_cart(product_2)
+cart.add_to_cart(product_4)
+
+cart.get_cart_items()
+cart.get_cart_total()
+
+
