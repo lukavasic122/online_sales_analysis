@@ -31,11 +31,3 @@ cart.add_to_cart(product_4)
 
 cart.get_cart_items()
 cart.get_cart_total()
-
-
-product_1 = Product('Fender Stratocaster', 250000, 15)
-product_2 = Product('Fender Jazz bass', 310000, 10)
-product_3 = Product('Fender Telecaster', 180000, 10)
-product_4 = Product('Fender Precision bass', 300000, 5)
-
-
