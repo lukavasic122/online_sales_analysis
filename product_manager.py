@@ -43,5 +43,17 @@ class ProductManager:
                 print(f">.⚠️ - Greska! Proizvod '{product}' ne postoji na lageru!")
         else:
             print(f">.⚠️ - Greska! Unesite proizvod sa naseg lagera!")
+
+
+        #--Uklanjanje proizvoda:
+    def remove_product(self, product):
+        if isinstance(product, Product):
+            if product in self.product_list:
+                self.product_list.remove(product)
+                print(f">.📤 - Proizvod '{product}' uspesno uklonjen sa lagera.")
+            else:
+                print(f">.⚠️ - Greska! Proizvod '{product}' ne postoji na lageru!")
+        else:
+            print(f">.⚠️ - Greska! Unesite proizvod sa naseg lagera!")
                 
     
